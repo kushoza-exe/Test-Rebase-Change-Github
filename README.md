@@ -15,3 +15,6 @@ Option 2: The Rebase Approach (Cleaner History)This method rewrites your new bra
 3. Rebase your branch onto the updated remote base branch: bash *git rebase origin/base-branch-name*
 
 (Note: If you have already pushed your new branch to a remote server before doing this, you will need to use git push --force-with-lease to update it after rebasing)
+
+Option 3: The One-Line ShortcutIf you are currently working on your new branch and want to pull the changes directly without switching back and forth.
+1. run this command:bash *git fetch origin base-branch-name:base-branch-name && git merge base-branch-name*
